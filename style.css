@@ -1,0 +1,179 @@
+/* Modern Global Styles */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #111c24, #0b1116);
+  color: #ffffff;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px 0;
+}
+
+/* Game Container Card */
+.game-container {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  width: 90%;
+  max-width: 500px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.2rem;
+  margin-top: 0;
+  margin-bottom: 25px;
+  color: #00ffcc;
+  text-shadow: 0 0 10px rgba(0, 255, 204, 0.3);
+}
+
+/* Scoreboard Grid */
+.scoreboard {
+  display: flex;
+  justify-content: space-around;
+  background: rgba(0, 0, 0, 0.3);
+  padding: 15px;
+  border-radius: 12px;
+  margin-bottom: 30px;
+}
+
+.score-box {
+  font-size: 0.9rem;
+  color: #aaa;
+}
+
+.score-number {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #fff;
+  margin-top: 5px;
+}
+
+/* Choice Buttons */
+.button-group {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.choice-btn {
+  flex: 1;
+  background: rgba(255, 255, 255, 0.1);
+  border: 2px solid transparent;
+  color: #fff;
+  padding: 20px 10px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.choice-btn span {
+  font-size: 2rem;
+}
+
+.choice-btn:hover {
+  background: rgba(0, 255, 204, 0.15);
+  border-color: #00ffcc;
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 255, 204, 0.2);
+}
+
+.choice-btn:active {
+  transform: translateY(0);
+}
+
+/* Dynamic Results Showcase */
+.results-display {
+  background: rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  border-radius: 12px;
+  min-height: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.matchup {
+  font-size: 1.1rem;
+  color: #ddd;
+}
+
+.outcome {
+  font-size: 1.5rem;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+}
+
+/* Reset Button Style */
+.reset-btn {
+  background: #f44336;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.2s;
+  width: 100%;
+  margin-bottom: 25px;
+}
+
+.reset-btn:hover {
+  background: #d32f2f;
+}
+
+/* Match History Log Layout */
+.history-section {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: 20px;
+  text-align: left;
+}
+
+.history-section h3 {
+  font-size: 1.2rem;
+  margin-top: 0;
+  color: #00ffcc;
+  text-align: center;
+}
+
+.history-log {
+  max-height: 150px;
+  overflow-y: auto;
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  padding: 10px;
+  font-size: 0.9rem;
+  list-style-type: none;
+  margin: 0;
+}
+
+.history-item {
+  padding: 6px 10px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  display: flex;
+  justify-content: space-between;
+}
+
+.history-item:last-child {
+  border-bottom: none;
+}
+
+/* Outcome Color Schemes */
+.win { color: #4caf50; text-shadow: 0 0 10px rgba(76, 175, 80, 0.3); }
+.loss { color: #f44336; text-shadow: 0 0 10px rgba(244, 67, 54, 0.3); }
+.tie { color: #ffeb3b; text-shadow: 0 0 10px rgba(255, 235, 59, 0.3); }

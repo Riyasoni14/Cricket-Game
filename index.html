@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cricket Game</title>
+  <!-- Linking External CSS Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="game-container">
+    <h1>🏏 Bat Ball Stump Game</h1>
+
+    <!-- Scoreboard Tracker -->
+    <div class="scoreboard">
+      <div class="score-box">You <div class="score-number" id="user-score">0</div></div>
+      <div class="score-box">Ties <div class="score-number" id="tie-score">0</div></div>
+      <div class="score-box">Comp <div class="score-number" id="comp-score">0</div></div>
+    </div>
+
+    <!-- Graphical Action Buttons -->
+    <div class="button-group">
+      <button class="choice-btn" onclick="playRound('Bat')">
+        <span>🏏</span> Bat
+      </button>
+      <button class="choice-btn" onclick="playRound('Ball')">
+        <span>⚾</span> Ball
+      </button>
+      <button class="choice-btn" onclick="playRound('Stump')">
+        <span>🪵</span> Stump
+      </button>
+    </div>
+
+    <!-- Live In-Page Screen Updates -->
+    <div class="results-display">
+      <div class="matchup" id="matchup-text">Make your move to start the match!</div>
+      <div class="outcome" id="outcome-text"></div>
+    </div>
+
+    <!-- Reset Control -->
+    <button class="reset-btn" onclick="resetGame()">Reset Match</button>
+
+    <!-- Match History Log Section -->
+    <div class="history-section">
+      <h3>📜 Previous Records</h3>
+      <ul class="history-log" id="history-log">
+        <li style="text-align: center; color: #888; padding: 10px;">No matches played yet.</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Linking External JavaScript File -->
+  <script src="script.js"></script>
+</body>
+</html>
